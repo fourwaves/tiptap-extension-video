@@ -5,9 +5,13 @@ const YOUTUBE_REGEX_GLOBAL = /^(https?:\/\/)?(www\.|music\.)?(youtube\.com|youtu
 const VIMEO_REGEX = /^(https?:\/\/)?(www\.)?(vimeo\.com\/\d+|player\.vimeo\.com\/video\/\d+)(\/?.*)?$/;
 const VIMEO_REGEX_GLOBAL = /^(https?:\/\/)?(www\.)?(vimeo\.com\/\d+|player\.vimeo\.com\/video\/\d+)(\/?.*)?$/g;
 const isValidYoutubeUrl = (url) => {
+    if (!url)
+        return false;
     return url.match(YOUTUBE_REGEX);
 };
 const isValidVimeoUrl = (url) => {
+    if (!url)
+        return false;
     return url.match(VIMEO_REGEX);
 };
 const getEmbedUrlFromYoutubeUrl = (url) => {

@@ -1,7 +1,7 @@
 {
   "name": "@fourwaves/tiptap-extension-video",
   "description": "a video embed extension for tiptap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
