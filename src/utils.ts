@@ -7,10 +7,12 @@ export const VIMEO_REGEX = /^(https?:\/\/)?(www\.)?(vimeo\.com\/\d+|player\.vime
 export const VIMEO_REGEX_GLOBAL = /^(https?:\/\/)?(www\.)?(vimeo\.com\/\d+|player\.vimeo\.com\/video\/\d+)(\/?.*)?$/g;
 
 export const isValidYoutubeUrl = (url: string) => {
+  if (!url) return false;
   return url.match(YOUTUBE_REGEX);
 };
 
 export const isValidVimeoUrl = (url: string) => {
+  if (!url) return false;
   return url.match(VIMEO_REGEX);
 };
 
